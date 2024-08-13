@@ -183,4 +183,64 @@ JSON 的格式简洁且易于理解，使得它成为广泛使用的数据交换
 
 ### 7. **空值怎么给**
 
-[空值](https://www.notion.so/e26380c1e63147d399a722a700c29a13?pvs=21)
+#### 01. **空的 JSON 对象**
+
+空的 JSON 对象表示没有任何数据，它只包含一对空的花括号 `{}`。
+
+```json
+json复制代码
+{}
+
+```
+
+#### 02.. **包含空值的 JSON 对象**
+
+当 JSON 对象中的某些键有值为空时，可以使用 `null` 或者不包含该键。这里展示了这两种方法：
+
+### **使用 `null`**
+
+```json
+json复制代码
+{
+    "name": "John Doe",
+    "age": null,
+    "email": "johndoe@example.com"
+}
+```
+
+- `"age"` 的值是 `null`，表示该字段的值未知或不可用。
+
+### **不包含该键**
+
+```json
+json复制代码
+{
+    "name": "John Doe",
+    "email": "johndoe@example.com"
+}
+```
+
+- `"age"` 键不包含在 JSON 对象中，表示该信息在当前上下文中没有提供
+
+#### 03.
+
+将以上情况结合起来：
+
+```json
+json复制代码
+{
+    "name": "John Doe",
+    "age": null,
+    "email": "johndoe@example.com",
+    "friends": [],
+    "address": {},
+    "nickname": ""
+}
+```
+
+- `"name"` 有一个字符串值。
+- `"age"` 的值是 `null`。
+- `"email"` 有一个字符串值。
+- `"friends"` 是一个空数组。
+- `"address"` 是一个空对象。
+- `"nickname"` 是一个空字符串。
