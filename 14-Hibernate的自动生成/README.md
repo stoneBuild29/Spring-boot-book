@@ -15,19 +15,19 @@
 当运行Spring Boot应用程序时，Hibernate会根据实体类的注解自动生成SQL语句，以创建或更新数据库表结构。
 
 ## 项目结构
-- `src`
-  - `main`
-    - `java`
-      - `com`
-        - `stone`
-          - `boot`
-            - `stream`
-              - `User.java`
-    - `resources`
-      - `application.properties`
-  - `test`
-
-
+```plaintext
+src
+├── main
+│   ├── java
+│   │   └── com
+│   │       └── stone
+│   │           └── boot
+│   │               └── stream
+│   │                   └── User.java
+│   └── resources
+│       └── application.properties
+└── test
+```
 
 ## Project Structure
 
@@ -60,10 +60,6 @@ spring.jpa.show-sql=true
 ![CleanShot 2024-10-29 at 21.02.11@2x](https://cdn.jsdelivr.net/gh/stoneBuild29/MyPictures@main/upload/CleanShot%202024-10-29%20at%2021.02.11%402x.png)
 
 ![CleanShot 2024-10-29 at 21.02.54@2x](https://cdn.jsdelivr.net/gh/stoneBuild29/MyPictures@main/upload/CleanShot%202024-10-29%20at%2021.02.54%402x.png)
-
-
-
-
 
 ## 许可证
 
